@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<html>
+<head>
+<title>array</title>
+</head>
+<body>
+<script language="JavaScript">
+year = new Array("декабрь","январь","февраль","март","апрель","май",
+"июнь","июль","август","сентябрь","октябрь","ноябрь");
+summer = new Array(); //летние месяцы
+summer=year.slice(6,9);
+document.write(summer+"<br>");
+
+lessons = new Array("алгебра","информатика","физика","геометрия","биология","русский язык",
+"английский язык");
+physicalScience = new Array();
+idontknowScience = new Array();
+physicalScience=lessons.slice(0,4);
+idontknowScience =lessons.slice(4,7);
+document.write(physicalScience+"<br>");
+document.write(idontknowScience+"<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<HTML>
+<head>
+    <TITLE>Дёмин Роман</TITLE>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var draggable = false;
+            var positionDownX;
+            var positionDownY;
+
+            $(".drag").mousedown(function(posDown) {
+                draggable = true;
+                positionDownX = posDown.pageX;
+                positionDownY = posDown.pageY;
+            });
+
+            $(document).mousemove(function(posMove) {
+                if(draggable) $(".drag").offset({left: posMove.pageX - positionDownX, top: posMove.pageY - positionDownY});
+            });
+
+            $(document).mouseup(function() {
+                draggable = false;
+            });
+        });
+    </script>
+</head>
+<BODY>
+    <div class="wrapper">
+        <div class="drag" style="position:absolute;width:300px;height:150px;background-color:green;"></div>
+    </div>
+</BODY>
+</HTML>

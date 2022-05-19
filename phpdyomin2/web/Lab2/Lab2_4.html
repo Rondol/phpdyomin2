@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<HTML>
+<head>
+    <TITLE>Дёмин Роман</TITLE>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).mousemove(function(pos) {
+                $("#p1").html("X:" + pos.pageX + "<br>Y:" + pos.pageY);
+            });
+        });
+    </script>
+</head>
+<BODY>
+    <div class="wrapper">
+        <p id="p1"></p>
+    </div>
+</BODY>
+</HTML>

@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<HTML>
+<head>
+    <TITLE>Дёмин Роман</TITLE>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".left").click(function() {
+                $("#img").animate({left: "-=100px"}, "fast");
+            });
+            $(".right").click(function() {
+                $("#img").animate({left: "+=100px"}, "fast");
+            });
+            $(".up").click(function() {
+                $("#img").animate({top: "-=100px"}, "fast");
+            });
+            $(".down").click(function() {
+                $("#img").animate({top: "+=100px"}, "fast");
+            });
+        });
+    </script>
+</head>
+<BODY>
+        <div class="wrapper">
+        <img id="img" style="position:absolute;" src="https://www.modir-shabake.com/wp-content/uploads/2019/09/html5.jpg"></div>
+    </div>
+    <div class="control" style="text-align:center;padding-top:50%">
+        <button class="up">Вверх</button>
+        <button class="down">Вниз</button>
+        <button class="left">Влево</button>
+        <button class="right">Вправо</button>
+    </div>
+</BODY>
+</HTML>
